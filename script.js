@@ -7,17 +7,10 @@ function getHumanChoice() {
     return prompt("Rock, paper, or scissors?");
 }
 
-
-
-
-
-
 function playGame() {
     // player score variables
     let humanScore = 0, computerScore = 0;
 
-
-    // single round functionality
     function playRound(humanChoice, computerChoice) {
         humanChoice = humanChoice[0].toUpperCase() + humanChoice.slice(1).toLowerCase();
         if (humanChoice === computerChoice) {
